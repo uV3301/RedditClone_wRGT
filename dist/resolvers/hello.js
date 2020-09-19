@@ -13,10 +13,7 @@ exports.HelloResolver = void 0;
 const type_graphql_1 = require("type-graphql");
 let HelloResolver = class HelloResolver {
     hello() {
-        return "I can get any any data from these queries now!";
-    }
-    yourname() {
-        return "my names joe poe";
+        return "I can get any data I want";
     }
 };
 __decorate([
@@ -25,12 +22,6 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], HelloResolver.prototype, "hello", null);
-__decorate([
-    type_graphql_1.Query(() => String),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], HelloResolver.prototype, "yourname", null);
 HelloResolver = __decorate([
     type_graphql_1.Resolver()
 ], HelloResolver);

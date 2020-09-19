@@ -1,13 +1,12 @@
+import { Resolver, Query } from "type-graphql";
 
-import { Resolver, Query } from 'type-graphql';
 @Resolver()
 export class HelloResolver {
-    @Query(() => String)
+    @Query(() => String) 
     hello() {
-        return "I can get any any data from these queries now!"
-    }
-    @Query(() => String)
-    yourname() {
-        return "my names joe poe"
+        return "I can get any data I want";
     }
 }
+
+
+
