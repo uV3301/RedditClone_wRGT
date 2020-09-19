@@ -38,5 +38,6 @@ export class PostResolver {
             em.persistAndFlush(post);
         }
         return post;
+        
     }
 }
